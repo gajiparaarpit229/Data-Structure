@@ -1,0 +1,22 @@
+import java.util.*;
+public class Lab_4_22 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int array[]={7,9,6,3,2,5};
+        System.out.println("Enter position of Element to be deleted:");
+        int position = sc.nextInt();
+        int newArray[] = new int[5];
+        for (int i=0;i<5;i++) {
+            if(i>=position){
+                newArray[i]=array[i+1];
+            }
+            else{
+                newArray[i]=array[i];
+            }
+        }
+        for(int i=0;i<5;i++){
+            System.out.println(newArray[i]);
+        }
+
+    }
+}
